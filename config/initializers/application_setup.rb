@@ -1,0 +1,1 @@
+BRAND = 'Sample Mongo Ruby on Rails Application'
