@@ -1,4 +1,6 @@
 MongoRailsApp::Application.routes.draw do
+  devise_for :users
+
   root to: 'application#index'
 
   # The priority is based upon order of creation:

@@ -21,6 +21,7 @@ Spork.prefork do
   Rails.application.railties.all { |r| r.eager_load! }
   require 'rspec/rails'
   require 'rspec/autorun'
+  require 'draper/test/rspec_integration'
   
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
