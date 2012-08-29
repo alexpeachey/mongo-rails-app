@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# trap TERM and change to QUIT
+trap 'echo killing $PID; kill -USR1 $PID' TERM
+
+# program to run
+bundle exec sidekiq &
+
+# capture PID and wait
+PID=$!
+wait

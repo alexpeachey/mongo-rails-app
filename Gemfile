@@ -8,6 +8,9 @@ gem 'devise'
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'draper'
+gem 'redis'
+gem 'sidekiq'
+gem 'danthes'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,3 +46,5 @@ group :test do
   gem 'mongoid-rspec'
   gem 'factory_girl_rails'
 end
+
+gem "faye-redis"

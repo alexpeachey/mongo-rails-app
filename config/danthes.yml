@@ -1,0 +1,16 @@
+development:
+  adapter: thin
+  server: "http://localhost:9292"
+  secret_token: "secret"
+  mount: '/faye'
+test:
+  adapter: thin
+  server: "http://localhost:9292"
+  secret_token: "secret"
+  mount: '/faye'
+production:
+  adapter: thin
+  server: "http://faye.example.com"
+  mount: '/faye'
+  secret_token: "94d5eaa4413cfea6ac3859d3e6169082e2adc0e29626b54e7f54725db82ec6cd"
+  signature_expiration: 3600 # one hour
