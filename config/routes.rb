@@ -1,4 +1,4 @@
-MongoRailsApp::Application.routes.draw do
+App::Application.routes.draw do
   devise_for :users
 
   root to: 'application#index'
